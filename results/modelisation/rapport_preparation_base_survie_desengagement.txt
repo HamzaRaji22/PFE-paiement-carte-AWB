@@ -1,0 +1,19 @@
+=== PREPARATION DE LA BASE DE SURVIE - DESENGAGEMENT REEL ===
+
+Date de reference : 2025-12-31
+Seuil d'inactivite retenu : 120 jours
+
+Table 1 brute : 50000 lignes
+Exclus (dates manquantes) : 633
+Exclus (delai d'activation negatif) : 2588
+Exclus (dernier paiement avant premier paiement) : 0
+Exclus (duree nulle) : 274
+
+Base finale : 46505 lignes
+Repartition evenement/censure :
+event
+0    41244
+1     5261
+
+Variables conservees : age, genre, profession (regroupee), niveau_service, ville (regroupee), digital_usage
+Seuil de regroupement des categories rares : 300 clients

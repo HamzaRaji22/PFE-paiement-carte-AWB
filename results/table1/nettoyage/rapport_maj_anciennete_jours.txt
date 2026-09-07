@@ -1,0 +1,7 @@
+=== MISE A JOUR DE anciennete_jours ===
+Date de référence : 2026-01-02
+Valeurs non nulles : 49367
+
+=== NOUVELLES STATISTIQUES ===
+         colonne   count        mean        std  min   25%    50%    75%     max
+anciennete_jours 49367.0 3475.173152 3312.76792 10.0 889.0 2370.0 5210.0 32508.0

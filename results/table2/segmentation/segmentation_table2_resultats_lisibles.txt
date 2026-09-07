@@ -1,0 +1,46 @@
+RESULTATS - SEGMENTATION TABLE 2
+================================
+
+1. Seuils principaux
+- Potentiel activation : P25=0.3502 | P50=0.4115 | P75=0.5269
+- Orientation cash    : P25=0.6436 | P50=0.7507 | P75=0.7883
+- Digital             : P25=94.0000 | P50=132.0000 | P75=168.0000
+
+2. Répartition potentiel
+- Potentiel faible: 15000 clients
+- Potentiel fort: 15000 clients
+- Potentiel moyen: 30000 clients
+
+3. Répartition orientation cash
+- Orientation cash faible: 12310 clients
+- Orientation cash forte: 14542 clients
+- Orientation cash moyenne: 33148 clients
+
+4. Sous-segmentation des clients à fort potentiel
+- Fort potentiel mais ancre cash: 7662 clients
+- Fort potentiel mixte: 3499 clients
+- Fort potentiel digitalisable: 2256 clients
+- Fort potentiel digital pret a activer: 1118 clients
+- Fort potentiel oriente virement: 465 clients
+
+5. Alertes métier
+- Aucune alerte: 47906 clients
+- Activation difficile car cash fort: 6204 clients
+- Aucune connexion app: 2793 clients
+- Fort potentiel mais digital faible | Activation difficile car cash fort: 1409 clients
+- Fort potentiel mais digital faible: 1296 clients
+- Faible potentiel tres cash | Aucune connexion app: 202 clients
+- Fort potentiel mais digital faible | Aucune connexion app: 88 clients
+- Faible potentiel tres cash: 53 clients
+- Fort potentiel mais digital faible | Activation difficile car cash fort | Aucune connexion app: 49 clients
+
+6. Matrice croisée potentiel x orientation cash
+- Potentiel faible + Orientation cash faible: 3959 clients
+- Potentiel faible + Orientation cash forte: 255 clients
+- Potentiel faible + Orientation cash moyenne: 10786 clients
+- Potentiel fort + Orientation cash faible: 4209 clients
+- Potentiel fort + Orientation cash forte: 7662 clients
+- Potentiel fort + Orientation cash moyenne: 3129 clients
+- Potentiel moyen + Orientation cash faible: 4142 clients
+- Potentiel moyen + Orientation cash forte: 6625 clients
+- Potentiel moyen + Orientation cash moyenne: 19233 clients

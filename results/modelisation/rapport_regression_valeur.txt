@@ -1,0 +1,21 @@
+=== ENTRAINEMENT XGBOOST - REGRESSION VALEUR ATTENDUE ===
+
+Lignes totales : 34064
+Train : 27251 | Test : 6813
+Cible : rythme_paiement_mensuel
+Variables categorielles : ['genre', 'profession', 'niveau_service', 'ville']
+Variables numeriques : ['age', 'anciennete_jours', 'digital_usage']
+
+Metriques (jeu de test) :
+  RMSE : 2.5736  (baseline moyenne : 2.8216)
+  MAE  : 1.3689  (baseline moyenne : 1.6418)
+  R2   : 0.1681
+
+Importance des variables (decroissante) :
+anciennete_jours    0.253017
+digital_usage       0.163975
+ville               0.136539
+profession          0.136152
+niveau_service      0.124776
+age                 0.120364
+genre               0.065177

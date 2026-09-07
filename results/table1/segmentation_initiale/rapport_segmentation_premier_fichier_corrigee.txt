@@ -1,0 +1,40 @@
+=== SEGMENTATION CORRIGEE DU PREMIER FICHIER ===
+Fichier source: C:\Users\HP\Desktop\projet_paiement_PFE\output\echantillon_data_paiement_clean.xlsx
+Nombre de lignes: 50000
+Nombre de colonnes: 33
+
+--- SEUILS UTILISES ---
+q25_paiement_nb: 12.0
+q50_paiement_nb: 30.0
+q75_paiement_nb: 74.0
+q25_paiement_mnt: 3000.0
+q50_paiement_mnt: 8073.22
+q75_paiement_mnt: 22046.067499999997
+q50_retrait_nb: 860.0
+q75_retrait_nb: 3410.0
+q50_retrait_mnt: 913700.0
+q75_retrait_mnt: 3634775.0
+q50_app: 178.0
+q75_app: 346.0
+
+--- DISTRIBUTION DES SEGMENTS ---
+segment_metier
+Profil mixte                  30863
+Orienté retrait GAB           10090
+Faible utilisateur             7795
+Utilisateur paiement moyen      710
+Fort utilisateur paiement       398
+Digital actif                   144
+
+--- APERCU ---
+ ID      segment_metier  nb_paiements_total  mnt_paiements_total  nb_retraits_gab  mnt_retraits_gab  nb_connexions_app  part_paiement  part_retrait
+  1        Profil mixte                  25              3352.50           3864.0        1643600.00              143.0       0.006428      0.993572
+  2        Profil mixte                  16              1355.30            770.0         478800.00             1007.0       0.020356      0.979644
+  3        Profil mixte                 179             92290.10           2604.0        4552296.06               41.0       0.064319      0.935681
+  4        Profil mixte                  39              9227.06           1075.0        1075000.00               64.0       0.035009      0.964991
+  5        Profil mixte                   3             14629.00             18.0          78000.00              329.0       0.142857      0.857143
+  6        Profil mixte                  39             85770.27            460.0         414000.00               31.0       0.078156      0.921844
+  7 Orienté retrait GAB                 138             76109.04           3426.0        5893400.00              398.0       0.038721      0.961279
+  8        Profil mixte                   1              3024.78             31.0          45000.00              187.0       0.031250      0.968750
+  9 Orienté retrait GAB                 435            202857.99          24899.0       42354500.00              494.0       0.017171      0.982829
+ 10        Profil mixte                  18             30045.16            120.0         397500.00                0.0       0.130435      0.869565

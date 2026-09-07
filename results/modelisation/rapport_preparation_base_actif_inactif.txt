@@ -1,0 +1,27 @@
+=== PREPARATION DE LA BASE DE CLASSIFICATION ACTIF / JAMAIS ACTIF ===
+
+Table 1 (actif=1) : 50000 lignes
+Table 2 (actif=0) : 60000 lignes
+Base combinee finale : 94111 lignes
+Clients table 1 hors marche PARTICULIER ecartes : 15889
+Repartition de la cible (apres restriction PARTICULIER) :
+actif
+0    60000
+1    34111
+
+Variables conservees (independantes du paiement carte, echelle comparable) :
+age, genre, profession, niveau_service, ville, anciennete_jours, digital_usage
+
+Variables ecartees pour risque de fuite de cible :
+Nombre_local, Volume_local, Nombre_international, Volume_international (definissent la cible par construction)
+nbr_credit, nbr_debit, montant_total_credits, montant_total_debits (correlation nbr_debit / nb paiements carte = 0.69, fuite probable)
+marche (constante = PARTICULIER apres restriction de perimetre, sinon quasi-identifiant de la table d'origine)
+retrait_nb, retrait_mnt (echelles non comparables entre nbr_retrait_gab et frequence_sortant_retrait malgre le nom proche)
+
+Valeurs manquantes par colonne :
+age                    39
+genre                 845
+profession             26
+ville               23366
+anciennete_jours        1
+digital_usage        2510

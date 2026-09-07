@@ -1,0 +1,65 @@
+=== ANALYSE MARCHE x NIVEAU DE SERVICE ===
+Fichier source: C:\Users\HP\Desktop\projet_paiement_PFE\output\echantillon_data_paiement_clean.xlsx
+Nombre de lignes: 50000
+
+--- FREQUENCE MARCHE ---
+                 Marché  effectif  pourcentage
+            PARTICULIER     34111        68.22
+      PETITE ENTREPRISE      9649         19.3
+MAROCAINS NON RESIDENTS      4467         8.93
+         PROFESSIONNELS       683         1.37
+                   <NA>       633         1.27
+ PETITE MOYENNE ENTREPR       444         0.89
+              CORPORATE         9         0.02
+      GRANDE ENTREPRISE         4         0.01
+
+--- FREQUENCE NIVEAU DE SERVICE ---
+   Niveau de service  effectif  pourcentage
+      S3 - POTENTIEL     12605        25.21
+         S4 - AVENIR     12053        24.11
+        S2 - PREMIUM      9391        18.78
+      S5 - UNIVERSEL      8472        16.94
+     S1 - EXCELLENCE      2769         5.54
+            S6 - LIB      2362         4.72
+                <NA>       633         1.27
+      NOUVEAU CLIENT       436         0.87
+       NON RENSEIGNE       348          0.7
+         S4-MASS PME       250          0.5
+             G5 - GD       152          0.3
+             G4 - GD       139         0.28
+S3-PME INTERMEDIAIRE       101          0.2
+             G3 - GD        77         0.15
+             G2 - GD        60         0.12
+             G1 - GD        41         0.08
+   S2-PME SUPERIEURE        36         0.07
+         CONTENTIEUX        22         0.04
+        GD GD > 12 M        19         0.04
+    S1-MIDDLE MARKET        10         0.02
+ I3-INACTIF A POTENT        10         0.02
+           CORPORATE         9         0.02
+                  GE         4         0.01
+ I4-INACTIF SS POTEN         1          0.0
+
+--- TABLE CROISEE (EFFECTIFS) ---
+Niveau de service        CONTENTIEUX  CORPORATE  G1 - GD  G2 - GD  G3 - GD  G4 - GD  G5 - GD  GD GD > 12 M  GE  I3-INACTIF A POTENT  I4-INACTIF SS POTEN  NON RENSEIGNE  NOUVEAU CLIENT  S1 - EXCELLENCE  S1-MIDDLE MARKET  S2 - PREMIUM  S2-PME SUPERIEURE  S3 - POTENTIEL  S3-PME INTERMEDIAIRE  S4 - AVENIR  S4-MASS PME  S5 - UNIVERSEL  S6 - LIB  <NA>
+Marché                                                                                                                                                                                                                                                                                                                                                     
+CORPORATE                          0          9        0        0        0        0        0             0   0                    0                    0              0               0                0                 0             0                  0               0                     0            0            0               0         0     0
+GRANDE ENTREPRISE                  0          0        0        0        0        0        0             0   4                    0                    0              0               0                0                 0             0                  0               0                     0            0            0               0         0     0
+MAROCAINS NON RESIDENTS            2          0        3        4        1        2        2             3   0                    0                    0             19              16              355                 0          1069                  0            1450                     0         1268            0             271         2     0
+PARTICULIER                        3          0       18       23       63       98       97             9   0                    0                    0            256             315             1665                 0          6005                  0            8885                     0         8306            0            6197      2171     0
+PETITE ENTREPRISE                 15          0       19       33       13       39       53             7   0                    0                    0             69              68              487                 0          2005                  0            2168                     1         2479            0            2004       189     0
+PETITE MOYENNE ENTREPR             2          0        0        0        0        0        0             0   0                   10                    1              0              35                0                10             0                 36               0                   100            0          250               0         0     0
+PROFESSIONNELS                     0          0        1        0        0        0        0             0   0                    0                    0              4               2              262                 0           312                  0             102                     0            0            0               0         0     0
+<NA>                               0          0        0        0        0        0        0             0   0                    0                    0              0               0                0                 0             0                  0               0                     0            0            0               0         0   633
+
+--- TABLE CROISEE (POURCENTAGES PAR LIGNE) ---
+Niveau de service        CONTENTIEUX  CORPORATE  G1 - GD  G2 - GD  G3 - GD  G4 - GD  G5 - GD  GD GD > 12 M     GE  I3-INACTIF A POTENT  I4-INACTIF SS POTEN  NON RENSEIGNE  NOUVEAU CLIENT  S1 - EXCELLENCE  S1-MIDDLE MARKET  S2 - PREMIUM  S2-PME SUPERIEURE  S3 - POTENTIEL  S3-PME INTERMEDIAIRE  S4 - AVENIR  S4-MASS PME  S5 - UNIVERSEL  S6 - LIB   <NA>
+Marché                                                                                                                                                                                                                                                                                                                                                         
+CORPORATE                       0.00      100.0     0.00     0.00     0.00     0.00     0.00          0.00    0.0                 0.00                 0.00           0.00            0.00             0.00              0.00          0.00               0.00            0.00                  0.00         0.00         0.00            0.00      0.00    0.0
+GRANDE ENTREPRISE               0.00        0.0     0.00     0.00     0.00     0.00     0.00          0.00  100.0                 0.00                 0.00           0.00            0.00             0.00              0.00          0.00               0.00            0.00                  0.00         0.00         0.00            0.00      0.00    0.0
+MAROCAINS NON RESIDENTS         0.04        0.0     0.07     0.09     0.02     0.04     0.04          0.07    0.0                 0.00                 0.00           0.43            0.36             7.95              0.00         23.93               0.00           32.46                  0.00        28.39         0.00            6.07      0.04    0.0
+PARTICULIER                     0.01        0.0     0.05     0.07     0.18     0.29     0.28          0.03    0.0                 0.00                 0.00           0.75            0.92             4.88              0.00         17.60               0.00           26.05                  0.00        24.35         0.00           18.17      6.36    0.0
+PETITE ENTREPRISE               0.16        0.0     0.20     0.34     0.13     0.40     0.55          0.07    0.0                 0.00                 0.00           0.72            0.70             5.05              0.00         20.78               0.00           22.47                  0.01        25.69         0.00           20.77      1.96    0.0
+PETITE MOYENNE ENTREPR          0.45        0.0     0.00     0.00     0.00     0.00     0.00          0.00    0.0                 2.25                 0.23           0.00            7.88             0.00              2.25          0.00               8.11            0.00                 22.52         0.00        56.31            0.00      0.00    0.0
+PROFESSIONNELS                  0.00        0.0     0.15     0.00     0.00     0.00     0.00          0.00    0.0                 0.00                 0.00           0.59            0.29            38.36              0.00         45.68               0.00           14.93                  0.00         0.00         0.00            0.00      0.00    0.0
+<NA>                            0.00        0.0     0.00     0.00     0.00     0.00     0.00          0.00    0.0                 0.00                 0.00           0.00            0.00             0.00              0.00          0.00               0.00            0.00                  0.00         0.00         0.00            0.00      0.00  100.0

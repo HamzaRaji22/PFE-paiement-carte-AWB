@@ -1,0 +1,31 @@
+=== SOUS-SEGMENTATION DU SEGMENT FORT UTILISATEUR PAIEMENT ===
+Nombre total de clients dans le segment : 398
+
+--- REGLES METIER ---
+Local dominant si part_local_montant >= 70%
+International dominant si part_international_montant >= 70%
+Mixte sinon
+
+--- DISTRIBUTION DES SOUS-SEGMENTS ---
+sous_segment_paiement
+Fort utilisateur paiement local dominant            250
+Fort utilisateur paiement international dominant     79
+Fort utilisateur paiement mixte                      69
+
+--- APERCU ---
+  ID            segment_metier  Volume_local  Volume_international  montant_total_paiement  part_local_montant  part_international_montant                            sous_segment_paiement
+  18 Fort utilisateur paiement          0.00              72550.18                72550.18            0.000000                    1.000000 Fort utilisateur paiement international dominant
+ 217 Fort utilisateur paiement       2584.98              42766.54                45351.52            0.056999                    0.943001 Fort utilisateur paiement international dominant
+ 248 Fort utilisateur paiement      62034.31                  0.00                62034.31            1.000000                    0.000000         Fort utilisateur paiement local dominant
+ 317 Fort utilisateur paiement      71412.76                  0.00                71412.76            1.000000                    0.000000         Fort utilisateur paiement local dominant
+ 635 Fort utilisateur paiement      37506.40                  0.00                37506.40            1.000000                    0.000000         Fort utilisateur paiement local dominant
+1023 Fort utilisateur paiement          0.00              88630.58                88630.58            0.000000                    1.000000 Fort utilisateur paiement international dominant
+1200 Fort utilisateur paiement      63382.55                  0.00                63382.55            1.000000                    0.000000         Fort utilisateur paiement local dominant
+1245 Fort utilisateur paiement      40436.00              38839.73                79275.73            0.510068                    0.489932                  Fort utilisateur paiement mixte
+1585 Fort utilisateur paiement      39600.44               1164.94                40765.38            0.971423                    0.028577         Fort utilisateur paiement local dominant
+1590 Fort utilisateur paiement      88444.51              16482.04               104926.55            0.842918                    0.157082         Fort utilisateur paiement local dominant
+1608 Fort utilisateur paiement     204397.51              54620.99               259018.50            0.789123                    0.210877         Fort utilisateur paiement local dominant
+1893 Fort utilisateur paiement      36916.96                  0.00                36916.96            1.000000                    0.000000         Fort utilisateur paiement local dominant
+1912 Fort utilisateur paiement     148869.20                  0.00               148869.20            1.000000                    0.000000         Fort utilisateur paiement local dominant
+1976 Fort utilisateur paiement     200045.92             407391.35               607437.27            0.329328                    0.670672                  Fort utilisateur paiement mixte
+2234 Fort utilisateur paiement      71923.15              45466.75               117389.90            0.612686                    0.387314                  Fort utilisateur paiement mixte

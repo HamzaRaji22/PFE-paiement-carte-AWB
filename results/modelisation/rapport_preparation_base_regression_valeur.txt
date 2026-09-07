@@ -1,0 +1,18 @@
+=== PREPARATION DE LA BASE DE REGRESSION - VALEUR ATTENDUE ===
+
+Table 1 brute : 50000 lignes
+Clients avec rythme d'usage exploitable (chapitre 5) : 46779 lignes
+Clients hors marche PARTICULIER ecartes : 12715
+Base finale : 34064 lignes
+
+Cible : rythme_paiement_mensuel (paiements / mois depuis activation)
+  moyenne = 1.722
+  mediane = 0.755
+  ecart-type = 3.038
+
+Variables explicatives : age, genre, profession, niveau_service, ville, anciennete_jours, digital_usage
+
+Valeurs manquantes par colonne :
+age                 4
+genre             290
+digital_usage    2504

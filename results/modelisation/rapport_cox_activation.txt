@@ -1,0 +1,38 @@
+=== MODELE DE SURVIE DE COX (STRATIFIE) - TEMPS JUSQU'A LA PREMIERE ACTIVATION ===
+
+Lignes utilisees : 94063
+Evenements observes (activations) : 34064
+Observations censurees : 59999
+Variables en strates (sans coefficient) : ['genre', 'niveau_service']
+Nombre de combinaisons de strates observees : 38
+Covariables (avec coefficient) : ['age', 'digital_usage', 'profession', 'ville'] (70 apres encodage)
+
+Concordance index : 0.7662
+
+Variables significatives (p<0.05) : 50 / 70
+
+Top 20 covariables significatives (triees par magnitude du hazard ratio) :
+                                              coef  exp(coef)  se(coef)              p
+covariate                                                                             
+profession_ETUDIANT_DE_LENSEIGNEMENT_SUP  0.363635   1.438549  0.014571  1.850843e-137
+profession_MAKHZNI                       -0.313976   0.730537  0.038636   4.416322e-16
+ville_TEMARA                              0.276685   1.318751  0.020428   8.546703e-42
+profession_INGENIEUR_DETAT                0.253449   1.288462  0.042394   2.252901e-09
+profession_OUVRIER                       -0.246485   0.781543  0.022424   4.176425e-28
+profession_OUVRIER_NON_QUALIFIE          -0.236004   0.789778  0.026421   4.173287e-19
+profession_ETUDIANT_CHERCHEUR             0.220434   1.246618  0.037718   5.087892e-09
+ville_SALE                                0.200863   1.222457  0.017502   1.724164e-30
+profession_ETUDIANT                       0.199855   1.221226  0.011075   8.499656e-73
+profession_FEMME_AU_FOYER                -0.198615   0.819866  0.011307   4.463345e-69
+ville_MOHAMMEDIA                          0.190881   1.210315  0.024245   3.463347e-15
+ville_SETTAT                              0.190057   1.209318  0.034561   3.817050e-08
+profession_OUVRIER_QUALIFIE              -0.186077   0.830210  0.032970   1.663405e-08
+profession_CADRE                          0.176066   1.192517  0.021608   3.692133e-16
+profession_INSTITUTEUR                   -0.169504   0.844083  0.029460   8.726665e-09
+ville_MARRAKECH                           0.169107   1.184247  0.013230   2.074281e-37
+profession_EMPLOYE_DUNE_ASSOCIATION       0.167488   1.182332  0.038256   1.197243e-05
+profession_CADRE_COMMERCIAL               0.166832   1.181556  0.045596   2.532455e-04
+ville_NON_RENSEIGNE                      -0.165175   0.847745  0.007084  2.994465e-120
+ville_TANGER                              0.160159   1.173697  0.012216   2.874945e-39
+
+Resume complet disponible dans cox_summary_complet.csv

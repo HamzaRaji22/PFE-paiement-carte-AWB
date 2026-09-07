@@ -1,0 +1,55 @@
+=== PREPARATION DE LA BASE DE SCORING COMMERCANT (TABLE 1) ===
+
+Clients apres jointure nettoyage + segmentation : 50000
+Clients sans commercant renseigne (ecartes) : 633
+Clients exploitables : 49367
+
+Commercants uniques avant harmonisation du nom : 12363
+Commercants uniques apres harmonisation (casse/espaces) : 12318
+
+Seuil d'echantillon minimal retenu : 30 clients
+Commercants au-dessus du seuil : 177 (19784 clients couverts)
+
+Limite methodologique importante : le montant agrege par commercant correspond
+au volume de paiement TOTAL des clients dont ce commercant est la premiere
+destination de depense, et non au chiffre d'affaires reellement encaisse par ce
+commercant (les donnees ne contiennent pas le detail transaction par transaction
+ni le montant depense specifiquement chez chaque commercant).
+
+Top 15 commercants par nombre de clients :
+                 nb_clients  freq_paiement_moyenne  vol_paiement_moyen  digital_usage_moyen  anciennete_moyenne_jours  pct_grand_utilisateur  echantillon_suffisant
+commercant                                                                                                                                                         
+ONCF E COM             1309                  74.02            13747.22               341.38                   2217.69                   17.0                   True
+CARREFOUR MARKE        1308                 101.31            30945.98               276.42                   3995.62                   25.0                   True
+GLOVO PZ               1262                 205.54            50619.15               346.06                   2521.92                   44.0                   True
+RAM INTERNET            663                 101.73            60295.44               309.94                   4268.69                   27.0                   True
+MARJANE MARKET          657                 100.49            26536.69               270.75                   4399.16                   25.0                   True
+BIM                     544                  73.73            11737.48               269.54                   4007.86                   15.0                   True
+CARREFOUR HYPER         367                  90.67            32707.01               266.95                   4371.30                   21.0                   True
+TEMU.COM                366                  18.55             4628.17               218.99                   2136.09                    0.0                   True
+MARJANE TANGER          312                  43.85            15664.39               204.85                   4045.81                    8.0                   True
+MARJ MENARA G           305                  65.48            23017.33               231.07                   4094.66                   16.0                   True
+TEMU                    269                  25.78             5020.53               291.21                   2151.63                    1.0                   True
+MARJANE AGADIR          261                  57.95            24284.94               260.67                   4373.20                   15.0                   True
+MARJ H RYAD G           250                  80.84            32494.51               241.36                   5068.16                   26.0                   True
+AIR ARABIA ECOM         229                  65.37            28065.02               323.43                   3713.22                   17.0                   True
+MARJ A SEBAA G          206                  74.06            39807.22               259.67                   4565.25                   17.0                   True
+
+Top 15 commercants (echantillon suffisant) par % de grands utilisateurs :
+                 nb_clients  freq_paiement_moyenne  vol_paiement_moyen  digital_usage_moyen  anciennete_moyenne_jours  pct_grand_utilisateur  echantillon_suffisant
+commercant                                                                                                                                                         
+GLOVO PZ               1262                 205.54            50619.15               346.06                   2521.92                   44.0                   True
+RESORT CO GC             49                 129.22           124607.79               488.94                   4454.80                   43.0                   True
+KITEA GEANT RAB          36                  95.22            51242.22               260.28                   5043.42                   36.0                   True
+SISAL JEUX MARO          31                 100.81            35466.04               571.03                   3412.16                   32.0                   True
+MARJANE BOUSKOU          70                 109.39            28409.58               338.01                   3598.61                   31.0                   True
+MARJ CALIF G            149                 107.64            37570.68               274.24                   4332.70                   29.0                   True
+MARJANE MARINA           63                  98.67            28865.24               259.02                   4108.52                   29.0                   True
+ASWAK ASSALAM R          42                 101.88            48379.41               218.40                   5092.67                   29.0                   True
+SHOWROOMPRIVE M          34                 120.59            48636.65               351.47                   4082.24                   29.0                   True
+ELECTRO BOUSFIH          86                  87.44            43499.37               256.00                   3852.51                   27.0                   True
+RAM INTERNET            663                 101.73            60295.44               309.94                   4268.69                   27.0                   True
+CARREFOUR SIDI          119                 113.44            39307.93               297.40                   5238.49                   27.0                   True
+HYPER U ZENATA           33                 129.09            27886.60               282.27                   3899.06                   27.0                   True
+BIM MARRAK               33                  71.27            11650.38               209.85                   3213.73                   27.0                   True
+BEAUTY SUCCESS           34                  63.44            27621.99               277.68                   2825.65                   26.0                   True

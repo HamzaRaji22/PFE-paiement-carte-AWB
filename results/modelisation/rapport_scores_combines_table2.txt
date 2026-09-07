@@ -1,0 +1,14 @@
+=== SCORES COMBINES - PROBABILITE D'ACTIVATION x VALEUR ATTENDUE ===
+
+Clients scores : 60000
+Correlation probabilite / valeur attendue : -0.099
+
+Seuil probabilite (mediane) : 0.0153
+Seuil valeur attendue (mediane) : 1.3530
+
+Repartition par quadrant de priorisation :
+quadrant
+Priorite 2 : probabilite elevee, valeur faible    20561
+Priorite 3 : probabilite faible, valeur elevee    20555
+Priorite 1 : probabilite et valeur elevees         9452
+Priorite 4 : probabilite et valeur faibles         9432

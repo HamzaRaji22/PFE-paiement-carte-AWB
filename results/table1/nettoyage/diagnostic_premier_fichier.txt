@@ -1,0 +1,195 @@
+=== DIAGNOSTIC DU PREMIER FICHIER ===
+Fichier analyse: C:\Users\HP\Desktop\projet_paiement_PFE\Data\echantillon_data_paiement.xlsx
+Nombre de lignes: 50000
+Nombre de colonnes: 23
+
+--- COLONNES DISPONIBLES ---
+ID
+Nombre_local
+Volume_local
+Nombre_international
+Volume_international
+dt_deb_rela
+ens_pv_top_depense_2025
+premiere_ens_pv
+nbr_retrait_gab
+mnt_retrait_gab
+ville_principale
+dat_prem_paiement
+dat_prem_retrait
+Niveau de service
+Genre
+Marché
+Profession
+Age
+nbr_connexion_app
+nbr_credit
+nbr_debit
+montant_total_credits
+montant_total_debits
+
+--- CONTROLE IDENTIFIANT ---
+Colonne ID detectee: ID
+Nombre d'ID dupliques: 0
+
+--- DIAGNOSTIC PAR COLONNE ---
+Colonne: ID
+- Type detecte: numerique
+- Valeurs nulles: 0 (0.0%)
+- Valeurs uniques (hors null): 50000
+- Exemples: 1 | 2 | 3 | 4 | 5
+- Diagnostic nettoyage: RAS
+
+Colonne: Nombre_local
+- Type detecte: numerique
+- Valeurs nulles: 0 (0.0%)
+- Valeurs uniques (hors null): 669
+- Exemples: 25 | 16 | 81 | 39 | 3
+- Diagnostic nettoyage: RAS
+
+Colonne: Volume_local
+- Type detecte: numerique
+- Valeurs nulles: 0 (0.0%)
+- Valeurs uniques (hors null): 43528
+- Exemples: 3352.5 | 1355.3 | 48388.77 | 9227.060000000001 | 14629.0
+- Diagnostic nettoyage: RAS
+
+Colonne: Nombre_international
+- Type detecte: numerique
+- Valeurs nulles: 0 (0.0%)
+- Valeurs uniques (hors null): 336
+- Exemples: 0 | 0 | 98 | 0 | 0
+- Diagnostic nettoyage: RAS
+
+Colonne: Volume_international
+- Type detecte: numerique
+- Valeurs nulles: 0 (0.0%)
+- Valeurs uniques (hors null): 14079
+- Exemples: 0.0 | 0.0 | 43901.33 | 0.0 | 0.0
+- Diagnostic nettoyage: RAS
+
+Colonne: dt_deb_rela
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 8854
+- Exemples: 2018-12-10 | 2007-07-27 | 2023-11-01 | 2022-08-26 | 2001-05-28
+- Diagnostic nettoyage: RAS
+
+Colonne: ens_pv_top_depense_2025
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 12376
+- Exemples: PHARMACIE DE DC | AFRIQ I AL Ooub | ALIMENTATION GE | MARJANE MEKNES | ELECTROPLANET T
+- Diagnostic nettoyage: espaces multiples
+
+Colonne: premiere_ens_pv
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 13813
+- Exemples: WIN BY INWI  EC | IAM AZ DCG  TIZ | VENIZIA ICE DAR | IAM SELFCARE RE | MARJANE TANGER
+- Diagnostic nettoyage: espaces multiples
+
+Colonne: nbr_retrait_gab
+- Type detecte: numerique
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 9205
+- Exemples: 3864.0 | 770.0 | 2604.0 | 1075.0 | 18.0
+- Diagnostic nettoyage: RAS
+
+Colonne: mnt_retrait_gab
+- Type detecte: numerique
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 24685
+- Exemples: 1643600.0 | 478800.0 | 4552296.06 | 1075000.0 | 78000.0
+- Diagnostic nettoyage: RAS
+
+Colonne: ville_principale
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 201
+- Exemples: INEZGANE | TIZNIT | DAR BOUAZZA | MEKNES | TANGER
+- Diagnostic nettoyage: RAS
+
+Colonne: dat_prem_paiement
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 3090
+- Exemples: 2022-01-12 | 2016-10-18 | 2023-12-04 | 2022-10-04 | 2023-08-18
+- Diagnostic nettoyage: RAS
+
+Colonne: dat_prem_retrait
+- Type detecte: date_probable
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 3007
+- Exemples: 2021-12-27 | 2015-04-13 | 2024-05-10 | 2022-09-15 | 2023-01-23
+- Diagnostic nettoyage: format date a verifier
+
+Colonne: Niveau de service
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 23
+- Exemples: S4 - AVENIR | S5 - UNIVERSEL | S2 - PREMIUM | S4 - AVENIR | S3 - POTENTIEL
+- Diagnostic nettoyage: RAS
+
+Colonne: Genre
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 3
+- Exemples: MASCULIN | MASCULIN | MASCULIN | MASCULIN | FEMININ
+- Diagnostic nettoyage: RAS
+
+Colonne: Marché
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 7
+- Exemples: PARTICULIER | PARTICULIER | PARTICULIER | PARTICULIER | MAROCAINS NON RESIDENTS
+- Diagnostic nettoyage: espaces multiples
+
+Colonne: Profession
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 725
+- Exemples: INSPECTEUR DE POLICE | COOPERANT | ADMINISTRATEUR DIRECTEUR GENER | SALARIE DES PETITES ET MOYENNE | FEMME AU FOYER
+- Diagnostic nettoyage: RAS
+
+Colonne: Age
+- Type detecte: texte
+- Valeurs nulles: 633 (1.27%)
+- Valeurs uniques (hors null): 100
+- Exemples: 33 | 57 | 62 | 76 | 60
+- Diagnostic nettoyage: valeurs placeholder a uniformiser
+
+Colonne: nbr_connexion_app
+- Type detecte: numerique
+- Valeurs nulles: 5018 (10.04%)
+- Valeurs uniques (hors null): 1821
+- Exemples: 143.0 | 1007.0 | 41.0 | 64.0 | 329.0
+- Diagnostic nettoyage: RAS
+
+Colonne: nbr_credit
+- Type detecte: numerique
+- Valeurs nulles: 809 (1.62%)
+- Valeurs uniques (hors null): 8638
+- Exemples: 1988.0 | 574.0 | 372.0 | 344.0 | 188.0
+- Diagnostic nettoyage: RAS
+
+Colonne: nbr_debit
+- Type detecte: numerique
+- Valeurs nulles: 809 (1.62%)
+- Valeurs uniques (hors null): 18030
+- Exemples: 7616.0 | 2548.0 | 65658.0 | 4257.0 | 158.0
+- Diagnostic nettoyage: RAS
+
+Colonne: montant_total_credits
+- Type detecte: numerique
+- Valeurs nulles: 809 (1.62%)
+- Valeurs uniques (hors null): 47472
+- Exemples: 5827643.92 | 792762.04 | 11628009.48 | 7942259.1 | 350700.0
+- Diagnostic nettoyage: RAS
+
+Colonne: montant_total_debits
+- Type detecte: numerique
+- Valeurs nulles: 809 (1.62%)
+- Valeurs uniques (hors null): 49181
+- Exemples: 5570169.36 | 783562.78 | 40654842.12 | 7693879.92 | 439103.86
+- Diagnostic nettoyage: RAS

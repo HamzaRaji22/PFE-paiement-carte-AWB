@@ -1,0 +1,99 @@
+=== NETTOYAGE DE LA DEUXIEME TABLE ===
+Fichier source: C:\Users\HP\Desktop\projet_paiement_PFE\Data\data_paiement_2_PFE.xlsx
+Shape initiale: 60000 lignes x 19 colonnes
+
+--- ID ---
+Doublons ID avant suppression: 0
+Doublons ID apres suppression: 0
+
+--- DATE: Date Début Relation ---
+NaN avant conversion: 0
+NaN apres conversion: 1
+Type final: datetime64[ns]
+
+--- NUMERIQUE: Montant_VIREMENT_cmc ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: frequence_VIREMENT_cmc ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: V_CMC ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: F_CMC ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: Montant_RETRAITS_cmd ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: Montant_VIREMENT_cmd ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: frequence_RETRAITS_cmd ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: frequence_VIREMENT_cmd ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: V_CMD ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: F_CMD ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: nbr_connexion_app ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: age_client_ORDO ---
+NaN avant conversion: 0
+NaN apres conversion: 35
+Type final: float64
+
+--- TEXTE: profession_ORDO ---
+Null avant nettoyage: 26
+Null apres nettoyage: 26
+
+--- TEXTE: niveau de service ORDO ---
+Null avant nettoyage: 0
+Null apres nettoyage: 0
+
+--- TEXTE: Marché_ORDO ---
+Null avant nettoyage: 0
+Null apres nettoyage: 0
+
+--- TEXTE: Ville ---
+Null avant nettoyage: 0
+Null apres nettoyage: 23366
+
+--- TEXTE: genre_ORDO ---
+Null avant nettoyage: 555
+Null apres nettoyage: 555
+
+=== APERCU FINAL ===
+Shape finale: 60000 lignes x 21 colonnes
+Colonnes finales:
+ID, Date Début Relation, anciennete_jours, Montant_VIREMENT_cmc, frequence_VIREMENT_cmc, V_CMC, F_CMC, Montant_RETRAITS_cmd, Montant_VIREMENT_cmd, frequence_RETRAITS_cmd, frequence_VIREMENT_cmd, V_CMD, F_CMD, profession_ORDO, age_client_ORDO, niveau de service ORDO, Marché_ORDO, Ville, genre_ORDO, nbr_connexion_app, has_app_connexion
+
+Fichier nettoye exporte: C:\Users\HP\Desktop\projet_paiement_PFE\output2\data_paiement_2_PFE_clean_v2.xlsx

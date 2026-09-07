@@ -1,0 +1,289 @@
+=== ANALYSE DE LA DEUXIEME TABLE ===
+Fichier source: C:\Users\HP\Desktop\projet_paiement_PFE\Data\data_paiement_2_PFE.xlsx
+Shape initiale: 60000 lignes x 19 colonnes
+
+--- ID ---
+Doublons ID: 0
+Valeurs manquantes ID: 0
+
+--- COLONNE: ID ---
+Type inferé: numerique
+Type pandas actuel: int64
+Valeurs manquantes: 0
+Valeurs uniques: 60000
+Min: 100000
+Max: 159999
+Moyenne: 129999.5
+
+--- COLONNE: Montant_VIREMENT_cmc ---
+Type inferé: numerique
+Type pandas actuel: float64
+Valeurs manquantes: 0
+Valeurs uniques: 19653
+Min: 0.0
+Max: 45766812.85
+Moyenne: 38465.47575016667
+
+--- COLONNE: frequence_VIREMENT_cmc ---
+Type inferé: numerique
+Type pandas actuel: int64
+Valeurs manquantes: 0
+Valeurs uniques: 330
+Min: 0
+Max: 27236
+Moyenne: 10.4754
+
+--- COLONNE: V_CMC ---
+Type inferé: numerique
+Type pandas actuel: float64
+Valeurs manquantes: 0
+Valeurs uniques: 41933
+Min: 0.01
+Max: 290911155.8699999
+Moyenne: 120304.85499
+
+--- COLONNE: F_CMC ---
+Type inferé: numerique
+Type pandas actuel: int64
+Valeurs manquantes: 0
+Valeurs uniques: 394
+Min: 1
+Max: 27236
+Moyenne: 20.186916666666665
+
+--- COLONNE: Montant_RETRAITS_cmd ---
+Type inferé: numerique
+Type pandas actuel: float64
+Valeurs manquantes: 0
+Valeurs uniques: 23244
+Min: -57254518.7
+Max: 0.0
+Moyenne: -35601.09538183333
+
+--- COLONNE: Montant_VIREMENT_cmd ---
+Type inferé: numerique
+Type pandas actuel: float64
+Valeurs manquantes: 0
+Valeurs uniques: 9351
+Min: -35541593.4
+Max: 0.0
+Moyenne: -25808.047701833337
+
+--- COLONNE: frequence_RETRAITS_cmd ---
+Type inferé: numerique
+Type pandas actuel: int64
+Valeurs manquantes: 0
+Valeurs uniques: 287
+Min: 0
+Max: 580
+Moyenne: 21.17268333333333
+
+--- COLONNE: frequence_VIREMENT_cmd ---
+Type inferé: numerique
+Type pandas actuel: int64
+Valeurs manquantes: 0
+Valeurs uniques: 433
+Min: 0
+Max: 6603
+Moyenne: 7.146283333333334
+
+--- COLONNE: V_CMD ---
+Type inferé: numerique
+Type pandas actuel: float64
+Valeurs manquantes: 0
+Valeurs uniques: 45843
+Min: -294252240.1
+Max: -0.29
+Moyenne: -114808.957572
+
+--- COLONNE: F_CMD ---
+Type inferé: numerique
+Type pandas actuel: int64
+Valeurs manquantes: 0
+Valeurs uniques: 610
+Min: 1
+Max: 6653
+Moyenne: 50.134233333333334
+
+--- COLONNE: profession_ORDO ---
+Type inferé: texte
+Type pandas actuel: object
+Valeurs manquantes: 26
+Valeurs uniques: 580
+Top valeurs:
+  - NON RENSEIGNE: 19130
+  - EMPLOYE: 6573
+  - FEMME AU FOYER: 4917
+  - ETUDIANT: 2929
+  - AGENT DE SERVICE: 2088
+
+--- COLONNE: age_client_ORDO ---
+Type inferé: texte
+Type pandas actuel: object
+Valeurs manquantes: 0
+Valeurs uniques: 96
+Top valeurs:
+  - 36: 1309
+  - 29: 1251
+  - 23: 1244
+  - 37: 1233
+  - 34: 1225
+
+--- COLONNE: Date Début Relation ---
+Type inferé: date
+Type pandas actuel: object
+Valeurs manquantes: 0
+Valeurs uniques: 7551
+Top valeurs:
+  - 2023-12-05 00:00:00: 381
+  - 2023-12-06 00:00:00: 355
+  - 2023-12-04 00:00:00: 336
+  - 2023-12-08 00:00:00: 309
+  - 2023-12-07 00:00:00: 286
+
+--- COLONNE: niveau de service ORDO ---
+Type inferé: categorielle
+Type pandas actuel: object
+Valeurs manquantes: 0
+Valeurs uniques: 7
+Top valeurs:
+  - NOUVEAU CLIENT: 19545
+  - S6 - LIB: 11359
+  - S5 - UNIVERSEL: 9898
+  - S4 - AVENIR: 8973
+  - S3 - POTENTIEL: 6434
+
+--- COLONNE: Marché_ORDO ---
+Type inferé: categorielle
+Type pandas actuel: object
+Valeurs manquantes: 0
+Valeurs uniques: 1
+Top valeurs:
+  - PARTICULIER: 60000
+
+--- COLONNE: Ville ---
+Type inferé: texte
+Type pandas actuel: object
+Valeurs manquantes: 0
+Valeurs uniques: 209
+Top valeurs:
+  - -: 23366
+  - CASABLANCA: 10675
+  - TANGER: 1790
+  - FES: 1397
+  - MARRAKECH: 1378
+
+--- COLONNE: genre_ORDO ---
+Type inferé: categorielle
+Type pandas actuel: object
+Valeurs manquantes: 555
+Valeurs uniques: 2
+Top valeurs:
+  - MASCULIN: 40070
+  - FEMININ: 19375
+
+--- COLONNE: nbr_connexion_app ---
+Type inferé: numerique
+Type pandas actuel: int64
+Valeurs manquantes: 0
+Valeurs uniques: 1160
+Min: 0
+Max: 1999
+Moyenne: 149.16605
+
+--- DATE: Date Début Relation ---
+NaN avant conversion: 0
+NaN apres conversion: 1
+Type final: datetime64[ns]
+
+--- NUMERIQUE: ID ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: Montant_VIREMENT_cmc ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: frequence_VIREMENT_cmc ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: V_CMC ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: F_CMC ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: Montant_RETRAITS_cmd ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: Montant_VIREMENT_cmd ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: frequence_RETRAITS_cmd ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: frequence_VIREMENT_cmd ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: V_CMD ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: F_CMD ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: age_client_ORDO ---
+NaN avant conversion: 0
+NaN apres conversion: 35
+Type final: float64
+
+--- NUMERIQUE: nbr_connexion_app ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- TEXTE: profession_ORDO ---
+Null avant nettoyage: 26
+Null apres nettoyage: 26
+
+--- TEXTE: niveau de service ORDO ---
+Null avant nettoyage: 0
+Null apres nettoyage: 0
+
+--- TEXTE: Marché_ORDO ---
+Null avant nettoyage: 0
+Null apres nettoyage: 0
+
+--- TEXTE: Ville ---
+Null avant nettoyage: 0
+Null apres nettoyage: 23366
+
+--- TEXTE: genre_ORDO ---
+Null avant nettoyage: 555
+Null apres nettoyage: 555
+
+=== APERCU FINAL ===
+Shape finale: 60000 lignes x 21 colonnes
+Colonnes finales:
+ID, Date Début Relation, anciennete_jours, Montant_VIREMENT_cmc, frequence_VIREMENT_cmc, V_CMC, F_CMC, Montant_RETRAITS_cmd, Montant_VIREMENT_cmd, frequence_RETRAITS_cmd, frequence_VIREMENT_cmd, V_CMD, F_CMD, profession_ORDO, age_client_ORDO, niveau de service ORDO, Marché_ORDO, Ville, genre_ORDO, nbr_connexion_app, has_app_connexion
+
+Fichier nettoye exporte: C:\Users\HP\Desktop\projet_paiement_PFE\output2\data_paiement_2_PFE_clean.xlsx

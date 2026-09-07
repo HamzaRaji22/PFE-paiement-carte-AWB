@@ -1,0 +1,16 @@
+=== PREPARATION DE LA BASE DE SURVIE - DESENGAGEMENT (MARCHE PARTICULIER) ===
+
+Date de reference : 2025-12-31 | Seuil d'inactivite : 120 jours
+
+Table 1 brute : 50000 lignes
+Exclus (dates manquantes) : 633
+Exclus (delai d'activation negatif) : 2588
+Exclus (duree nulle) : 274
+Clients hors marche PARTICULIER ecartes : 12620
+
+Base finale : 33885 lignes
+Repartition evenement/censure :
+event
+0    30372
+1     3513
+Taux de desengagement : 10.4%

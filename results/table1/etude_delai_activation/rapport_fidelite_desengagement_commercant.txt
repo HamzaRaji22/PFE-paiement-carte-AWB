@@ -1,0 +1,48 @@
+=== COMPLEMENT A L'ETUDE DU CHAPITRE 5 : DESENGAGEMENT REEL ET COMMERCANT PRINCIPAL ===
+
+Desengagement reel par groupe de vitesse d'activation :
+                                   nb_clients  jours_depuis_dernier_paiement_median  jours_depuis_dernier_paiement_moyen  taux_desengagement_pct
+groupe_activation                                                                                                                               
+Activation rapide (<=30j)                6057                                  16.0                                38.74                     8.0
+Activation intermediaire (31-60j)        4515                                  18.0                                42.48                     9.0
+Activation tardive (>60j)               36207                                  21.0                                50.39                    13.0
+
+Top 10 commercants -- Activation rapide (<=30j) :
+commercant
+GLOVO PZ           368
+ONCF E COM         222
+CARREFOUR MARKE    190
+RAM INTERNET        98
+MARJANE MARKET      89
+TEMU.COM            63
+BIM                 52
+TEMU                40
+CARREFOUR HYPER     39
+MARJ MENARA G       39
+
+Top 10 commercants -- Activation intermediaire (31-60j) :
+commercant
+GLOVO PZ           214
+ONCF E COM         192
+CARREFOUR MARKE    137
+BIM                 62
+RAM INTERNET        60
+MARJANE MARKET      58
+MARJ H RYAD G       27
+MARJANE AGADIR      23
+CARREFOUR HYPER     23
+MARJANE TANGER      22
+
+Top 10 commercants -- Activation tardive (>60j) :
+commercant
+CARREFOUR MARKE    949
+ONCF E COM         879
+GLOVO PZ           658
+MARJANE MARKET     497
+RAM INTERNET       443
+BIM                424
+CARREFOUR HYPER    295
+TEMU.COM           280
+MARJANE TANGER     259
+MARJ MENARA G      230
+

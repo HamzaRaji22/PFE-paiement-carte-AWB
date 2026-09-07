@@ -1,0 +1,33 @@
+=== ETUDE : VITESSE D'ACTIVATION ET FIDELITE (TABLE 1) ===
+
+Lignes totales : 50000
+Exclues (date manquante) : 633
+Exclues (delai negatif, paiement avant debut de relation) : 2588
+Lignes exploitables : 46779
+
+Effectifs par groupe :
+groupe_activation
+Activation rapide (<=30j)             6057
+Activation intermediaire (31-60j)     4515
+Activation tardive (>60j)            36207
+
+Rythme d'usage par groupe :
+                                  nb_clients rythme_paiement_mensuel        rythme_volume_mensuel          digital_usage        part_paiement_calc       
+                                                                mean median                  mean   median          mean median               mean median
+groupe_activation                                                                                                                                        
+Activation rapide (<=30j)               6057                   2.947  1.661               769.121  330.180       295.820  212.0              0.087  0.008
+Activation intermediaire (31-60j)       4515                   2.064  1.150               531.395  233.127       293.183  208.0              0.065  0.006
+Activation tardive (>60j)              36207                   1.376  0.547               429.460  164.099       269.440  184.0              0.076  0.007
+
+Part de 'Grand utilisateur multi-usage' par groupe :
+groupe_activation
+Activation rapide (<=30j)            20.65
+Activation intermediaire (31-60j)    17.74
+Activation tardive (>60j)            13.44
+
+Croisement groupe x segment (% par ligne) :
+segment_usage_global               Faible utilisateur global  Grand utilisateur multi-usage  Utilisateur cash dominant  Utilisateur cash intensif  Utilisateur cash occasionnel  Utilisateur digital en progression  Utilisateur mixte equilibre  Utilisateur paiement dominant  Utilisateur paiement prioritaire
+groupe_activation                                                                                                                                                                                                                                                                                                
+Activation rapide (<=30j)                              11.41                          20.65                      11.56                       0.05                          6.98                                7.73                        27.51                          11.87                              2.25
+Activation intermediaire (31-60j)                      11.25                          17.74                      12.98                       0.16                          9.79                                5.65                        30.59                          10.21                              1.64
+Activation tardive (>60j)                              14.02                          13.44                      10.64                       0.07                         11.19                                7.34                        32.96                           8.22                              2.13

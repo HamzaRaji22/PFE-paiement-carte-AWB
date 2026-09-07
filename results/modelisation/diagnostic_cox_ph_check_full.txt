@@ -1,0 +1,207 @@
+The ``p_value_threshold`` is set at 0.05. Even under the null hypothesis of no violations, some
+covariates will be below the threshold by chance. This is compounded when there are many covariates.
+Similarly, when there are lots of observations, even minor deviances from the proportional hazard
+assumption will be flagged.
+
+With that in mind, it's best to use a combination of statistical tests and visual tests to determine
+the most serious violations. Produce visual plots using ``check_assumptions(..., show_plots=True)``
+and looking for non-constant lines. See link [A] below for a full example.
+
+<IPython.core.display.HTML object>
+
+
+1. Variable 'age' failed the non-proportional test: p-value is <5e-05.
+
+   Advice 1: the functional form of the variable 'age' might be incorrect. That is, there may be
+non-linear terms missing. The proportional hazard test used is very sensitive to incorrect
+functional forms. See documentation in link [D] below on how to specify a functional form.
+
+   Advice 2: try binning the variable 'age' using pd.cut, and then specify it in `strata=['age',
+...]` in the call in `.fit`. See documentation in link [B] below.
+
+   Advice 3: try adding an interaction term with your time variable. See documentation in link [C]
+below.
+
+
+2. Variable 'digital_usage' failed the non-proportional test: p-value is <5e-05.
+
+   Advice 1: the functional form of the variable 'digital_usage' might be incorrect. That is, there
+may be non-linear terms missing. The proportional hazard test used is very sensitive to incorrect
+functional forms. See documentation in link [D] below on how to specify a functional form.
+
+   Advice 2: try binning the variable 'digital_usage' using pd.cut, and then specify it in
+`strata=['digital_usage', ...]` in the call in `.fit`. See documentation in link [B] below.
+
+   Advice 3: try adding an interaction term with your time variable. See documentation in link [C]
+below.
+
+
+3. Variable 'profession_AGENT_DE_SECURITE' failed the non-proportional test: p-value is 0.0056.
+
+   Advice: with so few unique values (only 2), you can include
+`strata=['profession_AGENT_DE_SECURITE', ...]` in the call in `.fit`. See documentation in link [E]
+below.
+
+4. Variable 'profession_AGENT_DE_SERVICE' failed the non-proportional test: p-value is 0.0028.
+
+   Advice: with so few unique values (only 2), you can include
+`strata=['profession_AGENT_DE_SERVICE', ...]` in the call in `.fit`. See documentation in link [E]
+below.
+
+5. Variable 'profession_AUTRE' failed the non-proportional test: p-value is 0.0019.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_AUTRE', ...]` in
+the call in `.fit`. See documentation in link [E] below.
+
+6. Variable 'profession_CADRE' failed the non-proportional test: p-value is 0.0440.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_CADRE', ...]` in
+the call in `.fit`. See documentation in link [E] below.
+
+7. Variable 'profession_CHAUFFEUR' failed the non-proportional test: p-value is 0.0020.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_CHAUFFEUR',
+...]` in the call in `.fit`. See documentation in link [E] below.
+
+8. Variable 'profession_CHOMEUR' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_CHOMEUR', ...]`
+in the call in `.fit`. See documentation in link [E] below.
+
+9. Variable 'profession_COMMERCANT' failed the non-proportional test: p-value is 0.0003.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_COMMERCANT',
+...]` in the call in `.fit`. See documentation in link [E] below.
+
+10. Variable 'profession_EMPLOYE' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_EMPLOYE', ...]`
+in the call in `.fit`. See documentation in link [E] below.
+
+11. Variable 'profession_ETUDIANT' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_ETUDIANT', ...]`
+in the call in `.fit`. See documentation in link [E] below.
+
+12. Variable 'profession_ETUDIANT_DE_LENSEIGNEMENT_SUP' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include
+`strata=['profession_ETUDIANT_DE_LENSEIGNEMENT_SUP', ...]` in the call in `.fit`. See documentation
+in link [E] below.
+
+13. Variable 'profession_FEMME_AU_FOYER' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_FEMME_AU_FOYER',
+...]` in the call in `.fit`. See documentation in link [E] below.
+
+14. Variable 'profession_INGENIEUR_DETAT' failed the non-proportional test: p-value is 0.0521.
+
+   Advice: with so few unique values (only 2), you can include
+`strata=['profession_INGENIEUR_DETAT', ...]` in the call in `.fit`. See documentation in link [E]
+below.
+
+15. Variable 'profession_MAKHZNI' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_MAKHZNI', ...]`
+in the call in `.fit`. See documentation in link [E] below.
+
+16. Variable 'profession_NON_RENSEIGNE' failed the non-proportional test: p-value is 0.0002.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_NON_RENSEIGNE',
+...]` in the call in `.fit`. See documentation in link [E] below.
+
+17. Variable 'profession_OUVRIER' failed the non-proportional test: p-value is 0.0004.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_OUVRIER', ...]`
+in the call in `.fit`. See documentation in link [E] below.
+
+18. Variable 'profession_OUVRIER_NON_QUALIFIE' failed the non-proportional test: p-value is 0.0001.
+
+   Advice: with so few unique values (only 2), you can include
+`strata=['profession_OUVRIER_NON_QUALIFIE', ...]` in the call in `.fit`. See documentation in link
+[E] below.
+
+19. Variable 'profession_OUVRIER_QUALIFIE' failed the non-proportional test: p-value is 0.0256.
+
+   Advice: with so few unique values (only 2), you can include
+`strata=['profession_OUVRIER_QUALIFIE', ...]` in the call in `.fit`. See documentation in link [E]
+below.
+
+20. Variable 'profession_PROFESSEUR' failed the non-proportional test: p-value is 0.0026.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_PROFESSEUR',
+...]` in the call in `.fit`. See documentation in link [E] below.
+
+21. Variable 'profession_REPRESENTANT' failed the non-proportional test: p-value is 0.0257.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_REPRESENTANT',
+...]` in the call in `.fit`. See documentation in link [E] below.
+
+22. Variable 'profession_SALARIE_DES_PETITES_ET_MOYENNE' failed the non-proportional test: p-value is 0.0081.
+
+   Advice: with so few unique values (only 2), you can include
+`strata=['profession_SALARIE_DES_PETITES_ET_MOYENNE', ...]` in the call in `.fit`. See documentation
+in link [E] below.
+
+23. Variable 'profession_TECHNICIEN' failed the non-proportional test: p-value is 0.0041.
+
+   Advice: with so few unique values (only 2), you can include `strata=['profession_TECHNICIEN',
+...]` in the call in `.fit`. See documentation in link [E] below.
+
+24. Variable 'ville_AUTRE' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_AUTRE', ...]` in the
+call in `.fit`. See documentation in link [E] below.
+
+25. Variable 'ville_CASABLANCA' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_CASABLANCA', ...]` in
+the call in `.fit`. See documentation in link [E] below.
+
+26. Variable 'ville_INEZGANE' failed the non-proportional test: p-value is 0.0529.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_INEZGANE', ...]` in
+the call in `.fit`. See documentation in link [E] below.
+
+27. Variable 'ville_KENITRA' failed the non-proportional test: p-value is 0.0449.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_KENITRA', ...]` in
+the call in `.fit`. See documentation in link [E] below.
+
+28. Variable 'ville_MOHAMMEDIA' failed the non-proportional test: p-value is 0.0361.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_MOHAMMEDIA', ...]` in
+the call in `.fit`. See documentation in link [E] below.
+
+29. Variable 'ville_NON_RENSEIGNE' failed the non-proportional test: p-value is 0.0001.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_NON_RENSEIGNE', ...]`
+in the call in `.fit`. See documentation in link [E] below.
+
+30. Variable 'ville_RABAT' failed the non-proportional test: p-value is <5e-05.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_RABAT', ...]` in the
+call in `.fit`. See documentation in link [E] below.
+
+31. Variable 'ville_SALE' failed the non-proportional test: p-value is 0.0073.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_SALE', ...]` in the
+call in `.fit`. See documentation in link [E] below.
+
+32. Variable 'ville_TANGER' failed the non-proportional test: p-value is 0.0007.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_TANGER', ...]` in the
+call in `.fit`. See documentation in link [E] below.
+
+33. Variable 'ville_TETOUAN' failed the non-proportional test: p-value is 0.0189.
+
+   Advice: with so few unique values (only 2), you can include `strata=['ville_TETOUAN', ...]` in
+the call in `.fit`. See documentation in link [E] below.
+
+---
+[A]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html
+[B]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html#Bin-variable-and-stratify-on-it
+[C]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html#Introduce-time-varying-covariates
+[D]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html#Modify-the-functional-form
+[E]  https://lifelines.readthedocs.io/en/latest/jupyter_notebooks/Proportional%20hazard%20assumption.html#Stratification
+

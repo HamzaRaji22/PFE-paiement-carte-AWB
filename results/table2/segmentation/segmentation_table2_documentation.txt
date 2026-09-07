@@ -1,0 +1,52 @@
+
+SEGMENTATION TABLE 2
+===================
+
+Objectif
+--------
+Segmenter les clients de la table 2, qui n'ont pas encore adopte le paiement carte, selon leur potentiel d'activation.
+
+Logique metier
+--------------
+Table 2 = population sans paiement carte.
+La segmentation ne mesure donc pas un usage de paiement existant, mais un potentiel d'activation.
+
+Axes retenus
+------------
+1. Potentiel d'activation : intensite des flux, frequence transactionnelle, montant entrant, digital, anciennete.
+2. Orientation cash : importance des retraits dans les flux sortants.
+3. Maturite digitale : usage de l'application.
+
+Regles principales
+------------------
+- Potentiel faible / moyen / fort via P25 et P75 du score_potentiel_activation
+- Orientation cash faible / moyenne / forte via P25 et P75 du score_orientation_cash
+- Digital faible / moyen / fort via P25 et P75 de digital_usage
+
+Renforcement
+------------
+Sous-segmentation des clients a fort potentiel en profils plus actionnables :
+- Fort potentiel digital pret a activer
+- Fort potentiel digitalisable
+- Fort potentiel mais ancre cash
+- Fort potentiel oriente virement
+- Fort potentiel mixte
+
+Seuils observes
+---------------
+- Score potentiel activation : P25 = 0.350170 | P50 = 0.411486 | P75 = 0.526884
+- Score orientation cash    : P25 = 0.643562 | P50 = 0.750698 | P75 = 0.788270
+- Digital usage            : P25 = 94.000000 | P50 = 132.000000 | P75 = 168.000000
+
+Fichiers generes
+----------------
+- segmentation_table2_detail.csv
+- segmentation_table2_quantiles.csv
+- segmentation_table2_seuils_regles.csv
+- segmentation_table2_resume_potentiel.csv
+- segmentation_table2_resume_orientation_cash.csv
+- segmentation_table2_resume_croise.csv
+- segmentation_table2_resume_global.csv
+- segmentation_table2_sous_segments_fort_potentiel.csv
+- segmentation_table2_alertes.csv
+- segmentation_table2_resultats_lisibles.txt

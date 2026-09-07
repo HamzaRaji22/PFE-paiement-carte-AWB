@@ -1,0 +1,18 @@
+=== PROFIL DES VILLES ET PROFESSIONS A ACTIVATION RAPIDE (COMPLEMENT AU MODELE DE SURVIE) ===
+
+                       groupe  n_clients  age_moyen  pct_activation_rapide  rythme_paiement_median  pct_grand_utilisateur niveau_service_dominant
+     Villes rapides (HR>1.15)       8593       40.7                  14.08                    0.82                  18.81  S3 - POTENTIEL (26.9%)
+Villes lentes/non renseignees       7797       42.0                  15.69                    0.90                  19.71     S4 - AVENIR (25.0%)
+          Professions rapides       5835       31.7                  19.90                    1.19                  20.82  S5 - UNIVERSEL (23.1%)
+           Professions lentes       2571       50.3                   8.87                    0.42                   6.26     S4 - AVENIR (31.2%)
+             Ensemble table 1      50000       39.4                  12.11                    0.68                  14.17  S3 - POTENTIEL (25.5%)
+
+--- Detail par ville ---
+            n_clients  age_moyen  pct_grand_utilisateur  pct_activation_rapide
+ville_norm                                                                    
+CASABLANCA     7797.0       42.0                  19.71                  15.69
+MARRAKECH      3598.0       40.8                  18.07                  14.06
+MOHAMMEDIA     1130.0       42.5                  19.47                  14.96
+SALE           1867.0       39.7                  16.82                  14.46
+SETTAT          448.0       37.7                  16.07                  13.62
+TEMARA         1550.0       40.9                  23.23                  13.16

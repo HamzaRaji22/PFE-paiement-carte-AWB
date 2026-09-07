@@ -1,0 +1,24 @@
+=== MODELE DE SURVIE DE COX - DESENGAGEMENT (MARCHE PARTICULIER) ===
+
+Lignes utilisees : 33885
+Evenements observes (desengagements) : 3513
+Observations censurees : 30372
+Covariables : ['genre', 'niveau_service', 'age', 'digital_usage', 'anciennete_jours'] (19 apres encodage)
+References : niveau_service = S3 - POTENTIEL, genre = FEMININ
+
+Concordance index : 0.7205
+
+Variables significatives (p<0.05) : 7 / 19
+
+Variables significatives (triees par magnitude du hazard ratio) :
+                                    coef  exp(coef)  se(coef)             p
+covariate                                                                  
+niveau_service_S1___EXCELLENCE -0.095691   0.908745  0.023386  4.278968e-05
+niveau_service_S6___LIB         0.078092   1.081222  0.021902  3.632112e-04
+niveau_service_S2___PREMIUM    -0.063210   0.938746  0.013416  2.458910e-06
+niveau_service_S5___UNIVERSEL   0.048836   1.050048  0.013677  3.560204e-04
+age                            -0.001809   0.998192  0.000364  6.682661e-07
+digital_usage                  -0.000051   0.999949  0.000015  5.988311e-04
+anciennete_jours               -0.000015   0.999985  0.000002  8.838843e-21
+
+Resume complet disponible dans cox_desengagement_particulier_summary_complet.csv

@@ -1,0 +1,57 @@
+{
+  "resume": {
+    "fichier": "segmentation_premier_fichier_corrigee.csv",
+    "lignes": 50000,
+    "colonnes": 33,
+    "colonnes_numeriques": [
+      "ID",
+      "anciennete_jours",
+      "Age",
+      "Nombre_local",
+      "Volume_local",
+      "Nombre_international",
+      "Volume_international",
+      "nbr_retrait_gab",
+      "mnt_retrait_gab",
+      "nbr_connexion_app",
+      "has_app_connexion",
+      "nbr_credit",
+      "nbr_debit",
+      "montant_total_credits",
+      "montant_total_debits",
+      "nb_paiements_total",
+      "mnt_paiements_total",
+      "nb_retraits_gab",
+      "mnt_retraits_gab",
+      "nb_connexions_app",
+      "part_paiement",
+      "part_retrait"
+    ],
+    "colonnes_categorielles": [
+      "dt_deb_rela",
+      "dat_prem_paiement",
+      "dat_prem_retrait",
+      "Genre",
+      "Marché",
+      "Niveau de service",
+      "Profession",
+      "ville_principale",
+      "ens_pv_top_depense_2025",
+      "premiere_ens_pv",
+      "segment_metier"
+    ],
+    "taux_global_manquants_pct": 1.04,
+    "granularite_suggeree": "Une ligne semble correspondre à une entité unique, probablement portée par ID.",
+    "variables_cles": [
+      "ID",
+      "dt_deb_rela",
+      "dat_prem_paiement",
+      "dat_prem_retrait",
+      "anciennete_jours",
+      "Age",
+      "Genre",
+      "Marché"
+    ]
+  },
+  "introduction_proposee": "La table segmentation_premier_fichier_corrigee.csv contient 50000 lignes et 33 colonnes. Elle semble regrouper des informations utiles à l’analyse des clients, avec comme variables visibles ID, dt_deb_rela, dat_prem_paiement, dat_prem_retrait, anciennete_jours. Une ligne semble correspondre à une entité unique, probablement portée par ID. Le taux global de valeurs manquantes observé est de 1.04%, ce qui donne un premier indicateur de qualité des données."
+}

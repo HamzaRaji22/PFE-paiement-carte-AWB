@@ -1,0 +1,34 @@
+# Fichiers systeme
+desktop.ini
+.DS_Store
+
+# Configuration locale des editeurs (propre a chaque poste)
+.vscode/
+.idea/
+
+# Redaction du memoire (sources LaTeX, figures compilees, PDF) : suivie a part,
+# ce depot ne contient que le code et les resultats d'analyse
+rapport/
+rapport_pfe_maj/
+
+# ---------------------------------------------------------------------
+# DONNEES CLIENTS - NE JAMAIS VERSIONNER
+# Les extractions fournies par la banque et tous les fichiers derives
+# contenant des donnees client ligne par ligne restent strictement locaux.
+# Seuls le code, les figures et les rapports agreges sont versionnes.
+# ---------------------------------------------------------------------
+Data/
+archive/
+*.csv
+*.xlsx
+*.xls
+
+# Ancien depot imbrique, conserve hors suivi
+PFE-Data-analytics/
+
+# Python
+__pycache__/
+*.pyc
+
+# Fichiers de verrouillage Office
+~$*

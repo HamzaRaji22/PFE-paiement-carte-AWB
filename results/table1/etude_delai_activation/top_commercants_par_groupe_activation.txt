@@ -1,0 +1,42 @@
+=== COMMERCANT DE PLUS FORTE DEPENSE 2025, PAR GROUPE DE VITESSE D'ACTIVATION ===
+(PAS le commercant du premier paiement -- pas de detail transaction par transaction date)
+
+--- Activation rapide (<=30j) (6057 clients) ---
+commercant
+GLOVO PZ           368
+ONCF E COM         222
+CARREFOUR MARKE    190
+RAM INTERNET        98
+MARJANE MARKET      89
+TEMU.COM            63
+BIM                 52
+TEMU                40
+CARREFOUR HYPER     39
+MARJ MENARA G       39
+
+--- Activation intermediaire (31-60j) (4515 clients) ---
+commercant
+GLOVO PZ           214
+ONCF E COM         192
+CARREFOUR MARKE    137
+BIM                 62
+RAM INTERNET        60
+MARJANE MARKET      58
+MARJ H RYAD G       27
+MARJANE AGADIR      23
+CARREFOUR HYPER     23
+MARJANE TANGER      22
+
+--- Activation tardive (>60j) (36207 clients) ---
+commercant
+CARREFOUR MARKE    949
+ONCF E COM         879
+GLOVO PZ           658
+MARJANE MARKET     497
+RAM INTERNET       443
+BIM                424
+CARREFOUR HYPER    295
+TEMU.COM           280
+MARJANE TANGER     259
+MARJ MENARA G      230
+

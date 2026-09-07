@@ -1,0 +1,43 @@
+RESULTATS - SEGMENTATION RENFORCEE TABLE 1
+==========================================
+
+1. Seuils principaux
+- Paiement : P25=0.2348 | P50=0.3169 | P75=0.4347
+- Cash     : P25=0.5908 | P50=0.6839 | P75=0.7550
+- Digital  : P25=68.0000 | P50=178.0000 | P75=346.0000
+
+2. Répartition paiement
+- Paiement faible: 12500 clients
+- Paiement fort: 12500 clients
+- Paiement moyen: 25000 clients
+
+3. Répartition cash
+- Cash faible: 12500 clients
+- Cash fort: 12500 clients
+- Cash moyen: 25000 clients
+
+4. Sous-segmentation des clients paiement fort
+- Paiement fort - mixte: 5153 clients
+- Paiement fort - local dominant: 4460 clients
+- Paiement fort - 100% local: 2191 clients
+- Paiement fort - international dominant: 632 clients
+- Paiement fort - 100% international: 64 clients
+
+5. Alertes métier
+- Aucune alerte: 35096 clients
+- Faible usage global: 7317 clients
+- Grand utilisateur multi-flux: 6837 clients
+- Paiement fort mais digital faible: 464 clients
+- Paiement fort mais digital faible | Grand utilisateur multi-flux: 246 clients
+- Client tres oriente cash: 40 clients
+
+6. Matrice croisée paiement x cash
+- Paiement faible + Cash faible: 7317 clients
+- Paiement faible + Cash fort: 40 clients
+- Paiement faible + Cash moyen: 5143 clients
+- Paiement fort + Cash faible: 1166 clients
+- Paiement fort + Cash fort: 7083 clients
+- Paiement fort + Cash moyen: 4251 clients
+- Paiement moyen + Cash faible: 4017 clients
+- Paiement moyen + Cash fort: 5377 clients
+- Paiement moyen + Cash moyen: 15606 clients

@@ -1,0 +1,122 @@
+=== NETTOYAGE DU PREMIER FICHIER ===
+Fichier source: C:\Users\HP\Desktop\projet_paiement_PFE\Data\echantillon_data_paiement.xlsx
+Shape initiale: 50000 lignes x 23 colonnes
+
+--- ID ---
+Doublons ID avant suppression: 0
+Doublons ID apres suppression: 0
+
+--- DATE: dt_deb_rela ---
+NaN avant conversion: 633
+NaN apres conversion: 633
+Type final: datetime64[ns]
+
+--- DATE: dat_prem_paiement ---
+NaN avant conversion: 633
+NaN apres conversion: 633
+Type final: datetime64[ns]
+
+--- DATE: dat_prem_retrait ---
+NaN avant conversion: 633
+NaN apres conversion: 633
+Type final: datetime64[ns]
+
+--- NUMERIQUE: ID ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: Nombre_local ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: Volume_local ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: Nombre_international ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: int64
+
+--- NUMERIQUE: Volume_international ---
+NaN avant conversion: 0
+NaN apres conversion: 0
+Type final: float64
+
+--- NUMERIQUE: nbr_retrait_gab ---
+NaN avant conversion: 633
+NaN apres conversion: 633
+Type final: float64
+
+--- NUMERIQUE: mnt_retrait_gab ---
+NaN avant conversion: 633
+NaN apres conversion: 633
+Type final: float64
+
+--- NUMERIQUE: nbr_connexion_app ---
+NaN avant conversion: 5018
+NaN apres conversion: 5018
+Type final: float64
+
+--- NUMERIQUE: nbr_credit ---
+NaN avant conversion: 809
+NaN apres conversion: 809
+Type final: float64
+
+--- NUMERIQUE: nbr_debit ---
+NaN avant conversion: 809
+NaN apres conversion: 809
+Type final: float64
+
+--- NUMERIQUE: montant_total_credits ---
+NaN avant conversion: 809
+NaN apres conversion: 809
+Type final: float64
+
+--- NUMERIQUE: montant_total_debits ---
+NaN avant conversion: 809
+NaN apres conversion: 809
+Type final: float64
+
+--- NUMERIQUE: Age ---
+NaN avant conversion: 633
+NaN apres conversion: 640
+Type final: float64
+
+--- TEXTE: ville_principale ---
+Null avant nettoyage: 633
+Null apres nettoyage: 633
+
+--- TEXTE: Niveau de service ---
+Null avant nettoyage: 633
+Null apres nettoyage: 633
+
+--- TEXTE: Genre ---
+Null avant nettoyage: 633
+Null apres nettoyage: 633
+
+--- TEXTE: Marché ---
+Null avant nettoyage: 633
+Null apres nettoyage: 633
+
+--- TEXTE: Profession ---
+Null avant nettoyage: 633
+Null apres nettoyage: 633
+
+--- TEXTE: ens_pv_top_depense_2025 ---
+Null avant nettoyage: 633
+Null apres nettoyage: 633
+
+--- TEXTE: premiere_ens_pv ---
+Null avant nettoyage: 633
+Null apres nettoyage: 633
+
+=== APERCU FINAL ===
+Shape finale: 50000 lignes x 25 colonnes
+Colonnes finales:
+ID, dt_deb_rela, dat_prem_paiement, dat_prem_retrait, anciennete_jours, Age, Genre, Marché, Niveau de service, Profession, ville_principale, Nombre_local, Volume_local, Nombre_international, Volume_international, nbr_retrait_gab, mnt_retrait_gab, nbr_connexion_app, has_app_connexion, nbr_credit, nbr_debit, montant_total_credits, montant_total_debits, ens_pv_top_depense_2025, premiere_ens_pv
+
+Fichier nettoye exporte: C:\Users\HP\Desktop\projet_paiement_PFE\output\echantillon_data_paiement_clean.xlsx

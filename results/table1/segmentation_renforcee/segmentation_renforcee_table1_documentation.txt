@@ -1,0 +1,51 @@
+
+SEGMENTATION RENFORCEE - TABLE 1
+================================
+
+Objectif
+--------
+Renforcer la segmentation d'usage de la table 1 avec une lecture plus fine du comportement paiement.
+
+Niveau 1 : segmentation principale
+----------------------------------
+- Axe paiement : frequence, volume, diversite, digital, anciennete
+- Axe cash : frequence cash, volume cash, orientation cash
+- Classification en faible / moyen / fort via P25 et P75
+
+Niveau 2 : renforcement de la segmentation
+------------------------------------------
+- Sous-segmentation des clients Paiement fort en :
+  * 100% local
+  * 100% international
+  * local dominant
+  * international dominant
+  * mixte
+- Maturite digitale : digital faible / moyen / fort
+- Alertes metier sur les profils atypiques
+
+Regles de sous-segmentation Paiement fort
+-----------------------------------------
+- 100% local : paiements locaux > 0 et paiements internationaux = 0
+- 100% international : paiements internationaux > 0 et paiements locaux = 0
+- local dominant : part locale en nombre >= 70% ET part locale en volume >= 70%
+- international dominant : part internationale en nombre >= 70% ET part internationale en volume >= 70%
+- mixte : coexistence des deux sans domination nette
+
+Seuils observes
+---------------
+- Score paiement : P25 = 0.234778 | P50 = 0.316919 | P75 = 0.434687
+- Score cash     : P25 = 0.590773 | P50 = 0.683925 | P75 = 0.755017
+- Digital usage  : P25 = 68.000000 | P50 = 178.000000 | P75 = 346.000000
+
+Fichiers generes
+----------------
+- segmentation_renforcee_table1_detail.csv
+- segmentation_renforcee_table1_quantiles.csv
+- segmentation_renforcee_table1_seuils_regles.csv
+- segmentation_renforcee_table1_resume_paiement.csv
+- segmentation_renforcee_table1_resume_cash.csv
+- segmentation_renforcee_table1_resume_croise.csv
+- segmentation_renforcee_table1_resume_global.csv
+- segmentation_renforcee_table1_sous_segments_paiement_fort.csv
+- segmentation_renforcee_table1_alertes.csv
+- segmentation_renforcee_table1_resultats_lisibles.txt

@@ -1,0 +1,38 @@
+RESULTATS DE SEGMENTATION - TABLE 1
+===================================
+
+1. Seuils metier utilises
+- Paiement : P25=0.2348 | P50=0.3169 | P75=0.4347
+- Cash     : P25=0.5908 | P50=0.6839 | P75=0.7550
+
+2. Repartition par segment paiement
+- Paiement faible: 12500 clients
+- Paiement fort: 12500 clients
+- Paiement moyen: 25000 clients
+
+3. Repartition par segment cash
+- Cash faible: 12500 clients
+- Cash fort: 12500 clients
+- Cash moyen: 25000 clients
+
+4. Repartition par segment d'usage global
+- Utilisateur mixte equilibre: 15606 clients
+- Faible utilisateur global: 7317 clients
+- Grand utilisateur multi-usage: 7083 clients
+- Utilisateur cash dominant: 5377 clients
+- Utilisateur cash occasionnel: 5143 clients
+- Utilisateur paiement dominant: 4251 clients
+- Utilisateur digital en progression: 4017 clients
+- Utilisateur paiement prioritaire: 1166 clients
+- Utilisateur cash intensif: 40 clients
+
+5. Matrice croisee paiement x cash
+- Paiement faible + Cash faible: 7317 clients
+- Paiement faible + Cash fort: 40 clients
+- Paiement faible + Cash moyen: 5143 clients
+- Paiement fort + Cash faible: 1166 clients
+- Paiement fort + Cash fort: 7083 clients
+- Paiement fort + Cash moyen: 4251 clients
+- Paiement moyen + Cash faible: 4017 clients
+- Paiement moyen + Cash fort: 5377 clients
+- Paiement moyen + Cash moyen: 15606 clients

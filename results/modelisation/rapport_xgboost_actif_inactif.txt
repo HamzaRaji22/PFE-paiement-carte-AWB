@@ -1,0 +1,37 @@
+=== ENTRAINEMENT XGBOOST - CLASSIFICATION ACTIF / JAMAIS ACTIF ===
+
+Lignes totales : 94111
+Train : 75288 | Test : 18823
+Variables categorielles : ['genre', 'profession', 'niveau_service', 'ville']
+Variables numeriques : ['age', 'anciennete_jours', 'digital_usage']
+
+Metriques (jeu de test) :
+  accuracy: 0.8963
+  precision: 0.8762
+  recall: 0.8313
+  f1: 0.8532
+  roc_auc: 0.9660
+
+Matrice de confusion :
+[[11200   801]
+ [ 1151  5671]]
+
+Rapport de classification :
+                  precision    recall  f1-score   support
+
+Jamais actif (0)       0.91      0.93      0.92     12001
+       Actif (1)       0.88      0.83      0.85      6822
+
+        accuracy                           0.90     18823
+       macro avg       0.89      0.88      0.89     18823
+    weighted avg       0.90      0.90      0.90     18823
+
+
+Importance des variables (decroissante) :
+ville               0.326812
+digital_usage       0.290214
+niveau_service      0.162323
+profession          0.092069
+genre               0.064320
+age                 0.039468
+anciennete_jours    0.024794

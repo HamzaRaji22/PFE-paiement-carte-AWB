@@ -1,0 +1,27 @@
+=== MODELE DE SURVIE DE COX (V2) - DESENGAGEMENT REEL ===
+
+Lignes utilisees : 46505
+Evenements observes (desengagements) : 5261
+Observations censurees : 41244
+Covariables : ['genre', 'niveau_service', 'marche', 'age', 'digital_usage', 'anciennete_jours'] (17 apres encodage)
+
+Concordance index : 0.7136
+
+Variables significatives (p<0.05) : 11 / 17
+
+Variables significatives (triees par magnitude du hazard ratio) :
+                                    coef  exp(coef)  se(coef)             p
+covariate                                                                  
+niveau_service_S1___EXCELLENCE -0.089434   0.914449  0.018676  1.677611e-06
+niveau_service_S6___LIB         0.078973   1.082175  0.020815  1.482505e-04
+marche_PROFESSIONNELS          -0.078378   0.924615  0.035945  2.921821e-02
+marche_MAROCAINS_NON_RESIDENTS  0.077008   1.080050  0.014987  2.770157e-07
+niveau_service_S2___PREMIUM    -0.062588   0.939330  0.011444  4.526357e-08
+niveau_service_S5___UNIVERSEL   0.047091   1.048217  0.011662  5.390651e-05
+marche_PARTICULIER             -0.031073   0.969405  0.009925  1.743967e-03
+niveau_service_S4___AVENIR      0.022617   1.022875  0.010108  2.525083e-02
+age                            -0.001524   0.998477  0.000307  6.977992e-07
+digital_usage                  -0.000068   0.999932  0.000013  2.012289e-07
+anciennete_jours               -0.000014   0.999986  0.000001  4.151382e-26
+
+Resume complet disponible dans cox_desengagement_summary_complet.csv

@@ -1,0 +1,29 @@
+=== DBSCAN RESTREINT AU GROUPE 'ACTIVATION TARDIVE' (>60j) ===
+
+Variables utilisees : anciennete_jours, freq_paiement, vol_paiement, diversite_paiement, part_local_nb, freq_cash, vol_cash, part_paiement_calc, digital_usage
+Lignes analysees : 36207
+min_samples = 18 (regle 2 x nb_dimensions)
+eps = 1.092 (coude du graphe des 18-distances)
+
+Clusters denses trouves : 5
+Comportements atypiques : 3436 clients (9.49%)
+
+Profil des clusters (dont -1 = atypiques) :
+                nb_clients  pct_population  anciennete_jours  freq_paiement  vol_paiement  diversite_paiement  part_local_nb  freq_cash      vol_cash  part_paiement_calc  digital_usage
+cluster_dbscan                                                                                                                                                                          
+-1                    3436            9.49           6148.02         227.60      92995.01                1.67           0.78   17265.81  2.183878e+07                0.11         552.34
+ 0                   25526           70.50           4411.45          33.04       9853.50                1.00           1.00    1894.65  2.002487e+06                0.06         223.63
+ 1                    2016            5.57           2512.28          22.79       6144.69                1.00           0.00     576.16  4.850053e+05                0.25         249.79
+ 2                    4976           13.74           4057.90          72.69      24839.42                2.00           0.68    3399.49  3.828806e+06                0.03         319.18
+ 3                     189            0.52           4742.59          37.21      21260.01                2.00           0.47       2.56  3.454800e+02                0.99         150.14
+ 4                      64            0.18           5848.27         654.00     287400.35                2.00           0.88   66379.91  1.068265e+08                0.00         458.14
+
+Croisement avec la segmentation metier (segment_usage_global) :
+segment_usage_global  Faible utilisateur global  Grand utilisateur multi-usage  Utilisateur cash dominant  Utilisateur cash intensif  Utilisateur cash occasionnel  Utilisateur digital en progression  Utilisateur mixte equilibre  Utilisateur paiement dominant  Utilisateur paiement prioritaire
+cluster_dbscan                                                                                                                                                                                                                                                                                      
+-1                                            4                           2396                        223                          0                             0                                  93                           22                            347                               351
+ 0                                         4491                            664                       3577                         22                          3781                                1896                        10931                            149                                15
+ 1                                          580                              0                         45                          2                           270                                 461                          658                              0                                 0
+ 2                                            0                           1744                          6                          0                             0                                 169                          324                           2479                               254
+ 3                                            0                              0                          0                          0                             0                                  37                            0                              0                               152
+ 4                                            0                             64                          0                          0                             0                                   0                            0                              0                                 0
